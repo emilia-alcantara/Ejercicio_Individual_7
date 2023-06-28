@@ -3,5 +3,9 @@
     <style name="Base.Theme.EjercicioIndividual7" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:statusBarColor">#FF074E67</item>
+        <item name="android:navigationBarColor">#80074E67</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
 </resources>
