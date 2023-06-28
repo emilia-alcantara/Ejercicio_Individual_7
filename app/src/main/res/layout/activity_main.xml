@@ -17,7 +17,7 @@
         app:layout_constraintVertical_bias="0.071" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/editText"
         style="@style/my_editText_style"
         android:hint="Escribe aqui"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
@@ -29,9 +29,9 @@
         android:layout_width="261dp"
         android:layout_height="321dp"
         android:padding="0dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
-        app:layout_constraintStart_toStartOf="@+id/editTextText2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -44,7 +44,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button"
         style="@style/my_button_style"
         android:layout_marginTop="48dp"
         android:text="Button"
@@ -54,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/calendarView" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/switchTheme"
         android:text="Cambiar tema"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
