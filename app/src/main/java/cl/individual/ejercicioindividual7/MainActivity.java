@@ -48,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String texto = binding.editText.getText().toString();
+                if (texto.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Para enviar un mensaje debes escribirlo!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 Toast.makeText(MainActivity.this, "Tu mensaje: " + texto + " se enviará el día: " + fechaConFormato , Toast.LENGTH_LONG).show();
 
             }
@@ -70,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void mostrarToastInicial() {
-        Toast.makeText(this, "Bienvenido", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Escribe un mensaje para tu 'yo' del futuro y se enviará en la fecha que selecciones.", Toast.LENGTH_LONG).show();
     }
 
 

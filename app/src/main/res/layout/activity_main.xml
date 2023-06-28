@@ -8,7 +8,7 @@
     <TextView
         android:id="@+id/textView"
         style="@style/my_textView_style"
-        android:text="Hello World"
+        android:text="Mensajes del pasado"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -19,35 +19,28 @@
     <EditText
         android:id="@+id/editText"
         style="@style/my_editText_style"
+        android:layout_marginTop="24dp"
         android:hint="Escribe aqui"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="261dp"
         android:layout_height="321dp"
+        android:layout_marginTop="16dp"
         android:padding="0dp"
         app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="@+id/editText"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="98dp"
-        android:layout_height="99dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:srcCompat="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/button"
         style="@style/my_button_style"
-        android:layout_marginTop="48dp"
-        android:text="Button"
+        android:layout_marginTop="28dp"
+        android:text="Enviar"
         app:layout_constraintEnd_toEndOf="@+id/calendarView"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/calendarView"
@@ -64,5 +57,15 @@
         app:layout_constraintVertical_bias="0.022"
         tools:fontFamily="@font/farro"
         style="@style/my_switch_style" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="79dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/letter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
